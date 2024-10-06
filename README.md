@@ -7,20 +7,20 @@ A simple CLI to test API Gateway endpoints with IAM authorization. Uses the AWS 
 To install globally run the following:
 
 ```
-$ npm install -g aws-api-gateway-cli-test
+$ npm install -g aws-api-gateway-cli
 ```
 
 You can also use it locally using:
 
 ```
-$ npx aws-api-gateway-cli-test
+$ npx aws-api-gateway-cli
 ```
 
 ### Usage
 
 If you have it globally installed:
 
-``` bash
+```bash
 $ apig-test \
   --username='johndoe' \
   --password='password' \
@@ -41,8 +41,8 @@ $ apig-test \
 
 If you have it locally installed:
 
-``` bash
-$ npx aws-api-gateway-cli-test --options
+```bash
+$ npx aws-api-gateway-cli --options
 ```
 
 This command takes the following options:
@@ -70,7 +70,6 @@ This command takes the following options:
 
 - `api-gateway-region`
   The API Gateway region. Defaults to `us-east-1`.
-  
 - `api-key`
   The API key if required by the method. Defaults to none.
 
@@ -98,7 +97,7 @@ For additional documentation on the format for `params` and `additional-params`;
 
 To pass in path parameters with your request.
 
-``` bash
+```bash
 $ npx aws-api-gateway-cli-test \
 --username='email@example.com' \
 --password='password' \
@@ -115,7 +114,7 @@ $ npx aws-api-gateway-cli-test \
 
 To pass in query parameters and headers with your request.
 
-``` bash
+```bash
 $ npx aws-api-gateway-cli-test \
 --username='email@example.com' \
 --password='password' \
@@ -130,14 +129,13 @@ $ npx aws-api-gateway-cli-test \
 --method='GET'
 ```
 
-
 ### Local Development
 
 Clone the repo and initialize the project.
 
 ```
-$ git clone https://github.com/AnomalyInnovations/aws-api-gateway-cli-test
-$ cd aws-api-gateway-cli-test
+$ git clone https://github.com/tobkle/aws-api-gateway-cli.git
+$ cd aws-api-gateway-cli
 $ npm install
 ```
 
@@ -148,9 +146,3 @@ To install the `apig-test` command, run the following:
 ```
 $ npm link
 ```
-
-
-[apiGClient]: https://github.com/kndt84/aws-api-gateway-client
-[fTwitter]: https://twitter.com/fanjiewang
-[jTwitter]: https://twitter.com/jayair
-[email]: mailto:hello@serverless-stack.com
