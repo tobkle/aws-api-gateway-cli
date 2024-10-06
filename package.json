@@ -1,5 +1,5 @@
 {
-  "name": "aws-api-gateway-cli-test",
+  "name": "aws-api-gateway-cli",
   "version": "2.0.0",
   "description": "A simple CLI to test API Gateway endpoints with IAM authorization.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobkle/aws-api-gateway-cli.git"
+    "url": "git+https://github.com/tobkle/aws-api-gateway-cli.git"
   },
   "bin": {
     "apig-test": "index.js"
