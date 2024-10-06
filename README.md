@@ -21,7 +21,7 @@ $ npx aws-api-gateway-cli
 If you have it globally installed:
 
 ```bash
-$ apig-test \
+$ aws-api-gateway-cli \
   --username='johndoe' \
   --password='password' \
   --user-pool-id='us-east-1_Xxxxxxxx' \
